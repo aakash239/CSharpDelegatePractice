@@ -19,7 +19,7 @@ class Program
         Console.WriteLine("Please Enter your name");
         string name = Console.ReadLine()!;
 
-        // implementing delegate passed as a parameter
+        // implementing delegate passed as a parameterc
         LogText(multiLogDel, name);
     }
 
