@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateBasicExample", "DelegateBasicExample\DelegateBasicExample.csproj", "{83D56542-F9B2-496F-8353-D7C6FB36B274}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovarianceAndContravariance", "CovarianceAndContravariance\CovarianceAndContravariance.csproj", "{681D2F68-2876-4025-BF26-16C441518CCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{83D56542-F9B2-496F-8353-D7C6FB36B274}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83D56542-F9B2-496F-8353-D7C6FB36B274}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83D56542-F9B2-496F-8353-D7C6FB36B274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{681D2F68-2876-4025-BF26-16C441518CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{681D2F68-2876-4025-BF26-16C441518CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{681D2F68-2876-4025-BF26-16C441518CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{681D2F68-2876-4025-BF26-16C441518CCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
