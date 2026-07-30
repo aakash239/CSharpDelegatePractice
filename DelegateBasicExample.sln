@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHandler", "EventHandle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateArithmeticExample", "DelegateArithmeticExample\DelegateArithmeticExample.csproj", "{F978B8A8-98C5-479E-8D58-4C11E96F5FD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingMulticastExample", "LoggingMulticastExample\LoggingMulticastExample.csproj", "{CCB7AAC0-4895-42CC-B97C-2C581813DC14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,18 @@ Global
 		{F978B8A8-98C5-479E-8D58-4C11E96F5FD5}.Release|x64.Build.0 = Release|Any CPU
 		{F978B8A8-98C5-479E-8D58-4C11E96F5FD5}.Release|x86.ActiveCfg = Release|Any CPU
 		{F978B8A8-98C5-479E-8D58-4C11E96F5FD5}.Release|x86.Build.0 = Release|Any CPU
+		{CCB7AAC0-4895-42CC-B97C-2C581813DC14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB7AAC0-4895-42CC-B97C-2C581813DC14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB7AAC0-4895-42CC-B97C-2C581813DC14}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CCB7AAC0-4895-42CC-B97C-2C581813DC14}.Debug|x64.Build.0 = Debug|Any CPU
+		{CCB7AAC0-4895-42CC-B97C-2C581813DC14}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CCB7AAC0-4895-42CC-B97C-2C581813DC14}.Debug|x86.Build.0 = Debug|Any CPU
+		{CCB7AAC0-4895-42CC-B97C-2C581813DC14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB7AAC0-4895-42CC-B97C-2C581813DC14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB7AAC0-4895-42CC-B97C-2C581813DC14}.Release|x64.ActiveCfg = Release|Any CPU
+		{CCB7AAC0-4895-42CC-B97C-2C581813DC14}.Release|x64.Build.0 = Release|Any CPU
+		{CCB7AAC0-4895-42CC-B97C-2C581813DC14}.Release|x86.ActiveCfg = Release|Any CPU
+		{CCB7AAC0-4895-42CC-B97C-2C581813DC14}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
