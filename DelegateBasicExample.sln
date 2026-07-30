@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateBasicExample", "Del
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovarianceAndContravariance", "CovarianceAndContravariance\CovarianceAndContravariance.csproj", "{681D2F68-2876-4025-BF26-16C441518CCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThresholdEventReachedApplication", "ThresholdEventReachedApplication\ThresholdEventReachedApplication.csproj", "{F45D81F7-CE61-4C1D-825F-ED744F700D52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{681D2F68-2876-4025-BF26-16C441518CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{681D2F68-2876-4025-BF26-16C441518CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{681D2F68-2876-4025-BF26-16C441518CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F45D81F7-CE61-4C1D-825F-ED744F700D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F45D81F7-CE61-4C1D-825F-ED744F700D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F45D81F7-CE61-4C1D-825F-ED744F700D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F45D81F7-CE61-4C1D-825F-ED744F700D52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
