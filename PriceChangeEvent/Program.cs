@@ -5,29 +5,33 @@ class Program
     static void Main(string[] args)
     {
         Stock stock = new();
-        stock.priceChanged += ReactToChangeInPrice;
-        stock.priceChanged += ReactToChangeInPrice2;  
+        stock.PriceChanged += ReactToChangeInPrice;
+        stock.PriceChanged += ReactToChangeInPrice;
 
         stock.SetPrice(150);
         stock.SetPrice(200);
     }
 
-    private static void ReactToChangeInPrice(decimal oldPrice, decimal newPrice)
+    private static void ReactToChangeInPrice(object? obj, StockPriceChangedEventArgs e)
     {
-        Console.WriteLine($"Reacted to change1 in oldPrice{oldPrice} , NewPrice: {newPrice}!!");
+        Console.WriteLine($"Reacted to change1 in oldPrice {e.OldPrice} , NewPrice: {e.NewPrice}!!");
     }
-     private static void ReactToChangeInPrice2(decimal oldPrice, decimal newPrice)
+    private static void ReactToChangeInPrice2(object? obj, StockPriceChangedEventArgs e)
     {
-        Console.WriteLine($"Reacted to change2 in oldPrice{oldPrice} , NewPrice: {newPrice}!!");
+        Console.WriteLine($"Reacted to change2 in oldPrice {e.OldPrice} , NewPrice: {e.NewPrice}!!");
     }
 
 }
 
+class StockPriceChangedEventArgs(decimal oldPrice, decimal newPrice) : EventArgs
+{
+    public decimal OldPrice { get; set; } = oldPrice;
+    public decimal NewPrice { get; set; } = newPrice;
+}
+
 class Stock
 {
-    public delegate void PriceChangeHandler(decimal oldPrice, decimal newPrice);
-
-    public event PriceChangeHandler? priceChanged;
+    public event EventHandler<StockPriceChangedEventArgs>? PriceChanged;
 
     private decimal price = 100;
 
@@ -35,6 +39,6 @@ class Stock
     {
         decimal oldPrice = price;
         price = newPrice;
-        priceChanged?.Invoke(oldPrice, newPrice);
+        PriceChanged?.Invoke(this, new StockPriceChangedEventArgs(oldPrice, newPrice));
     }
 }
