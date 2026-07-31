@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateArithmeticExample",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingMulticastExample", "LoggingMulticastExample\LoggingMulticastExample.csproj", "{CCB7AAC0-4895-42CC-B97C-2C581813DC14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceChangeEvent", "PriceChangeEvent\PriceChangeEvent.csproj", "{7D45A73F-7056-4601-AD3D-DD12B023D86D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,18 @@ Global
 		{CCB7AAC0-4895-42CC-B97C-2C581813DC14}.Release|x64.Build.0 = Release|Any CPU
 		{CCB7AAC0-4895-42CC-B97C-2C581813DC14}.Release|x86.ActiveCfg = Release|Any CPU
 		{CCB7AAC0-4895-42CC-B97C-2C581813DC14}.Release|x86.Build.0 = Release|Any CPU
+		{7D45A73F-7056-4601-AD3D-DD12B023D86D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D45A73F-7056-4601-AD3D-DD12B023D86D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D45A73F-7056-4601-AD3D-DD12B023D86D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7D45A73F-7056-4601-AD3D-DD12B023D86D}.Debug|x64.Build.0 = Debug|Any CPU
+		{7D45A73F-7056-4601-AD3D-DD12B023D86D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7D45A73F-7056-4601-AD3D-DD12B023D86D}.Debug|x86.Build.0 = Debug|Any CPU
+		{7D45A73F-7056-4601-AD3D-DD12B023D86D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D45A73F-7056-4601-AD3D-DD12B023D86D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D45A73F-7056-4601-AD3D-DD12B023D86D}.Release|x64.ActiveCfg = Release|Any CPU
+		{7D45A73F-7056-4601-AD3D-DD12B023D86D}.Release|x64.Build.0 = Release|Any CPU
+		{7D45A73F-7056-4601-AD3D-DD12B023D86D}.Release|x86.ActiveCfg = Release|Any CPU
+		{7D45A73F-7056-4601-AD3D-DD12B023D86D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
