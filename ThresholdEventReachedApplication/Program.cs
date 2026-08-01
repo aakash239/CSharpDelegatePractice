@@ -19,9 +19,9 @@ class EventNoData
         }
     }
 
-    static void c_thresholdReached(Object? sender, EventArgs e)
+    static void c_thresholdReached(Object? sender, ThresholdreachedEventArgs e)
     {
-        Console.WriteLine("The threshold was reached.");
+        Console.WriteLine($"The threshold of {e.Threshold} was reached on {e.dateTime}.");
         Environment.Exit(0);
     }
 }
@@ -31,19 +31,27 @@ class Counter (int passedThreshold)
     public readonly int _threshold = passedThreshold;
     private int _total;
 
-    public event EventHandler? ThresholdReached;
+    public event EventHandler<ThresholdreachedEventArgs>? ThresholdReached;
     public void AddOne()
     {
         _total += 1;
         if(_total >= _threshold)
         {
-            OnThresholdReached(EventArgs.Empty);
+            ThresholdreachedEventArgs args = new ThresholdreachedEventArgs(_threshold, DateTime.Now);
+            OnThresholdReached(args);
         }
     }
 
-    protected virtual void OnThresholdReached(EventArgs e)
+    protected virtual void OnThresholdReached(ThresholdreachedEventArgs e)
     {
         ThresholdReached?.Invoke(this, e);
     }
+
+}
+
+public class ThresholdreachedEventArgs(int Threshold, DateTime dateTime) : EventArgs
+{
+    public int Threshold = Threshold;
+    public DateTime dateTime = dateTime;
 
 }
