@@ -6,7 +6,7 @@ class Program
     {
         Stock stock = new();
         stock.PriceChanged += ReactToChangeInPrice;
-        stock.PriceChanged += ReactToChangeInPrice;
+        stock.PriceChanged += ReactToChangeInPrice2;
 
         stock.SetPrice(150);
         stock.SetPrice(200);
